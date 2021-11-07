@@ -1,0 +1,5 @@
+-cp src
+-main WixReactNativeNavigationTest
+-lib react-next
+-lib react-native
+-js test/app.js
