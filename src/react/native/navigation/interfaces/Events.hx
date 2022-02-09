@@ -7,7 +7,7 @@ typedef CommandCompletedEvent = {
 }
 
 typedef BottomTabSelectedEvent = {
-	selectedTabIndex:Float,
+	selectedTabIndex:Int,
 	unselectedTabIndex:Float
 }
 

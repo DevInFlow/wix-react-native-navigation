@@ -144,7 +144,7 @@ typedef OptionsSplitView = {
 	?primaryBackgroundStyle:PrimaryBackgroundStyle
 }
 
-@:enum abstract Style(String) to String {
+@:enum abstract Style(String) from String to String {
 	var light = 'light';
 	var dark = 'dark';
 }
@@ -1014,11 +1014,12 @@ typedef DotIndicatorOptions = {
 }
 
 typedef ImageSystemSource = {
-	system:String,
+	?system:String,
 	?fallback:EitherType<String, ImageSource>
 }
 
-typedef ImageResource = EitherType<ImageSource, EitherType<String, ImageSystemSource>>;
+typedef ImageResource = Dynamic;
+// typedef ImageResource = EitherType<ImageSource, EitherType<String, ImageSystemSource>>;
 
 typedef OptionsBottomTab = {
 	?dotIndicator:DotIndicatorOptions,

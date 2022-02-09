@@ -58,7 +58,7 @@ extern class Navigation {
 	/**
 	 * Show a screen as a modal.
 	 */
-	static public function showModal(lyout:Layout):Promise<String>;
+	static public function showModal(layout:Layout):Promise<String>;
 
 	/**
 	 * Dismiss a modal by componentId. The dismissed modal can be anywhere in the stack.
